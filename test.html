@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function refreshAt(hours, minutes, seconds) {
+          var now = new Date();
+          var then = new Date();
+
+          if(now.getHours() > hours ||
+             (now.getHours() == hours && now.getMinutes() > minutes) ||
+              now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) {
+              then.setDate(now.getDate() + 1);
+
+          }
+          then.setHours(hours);
+          then.setMinutes(minutes);
+          then.setSeconds(seconds);
+
+          var timeout = (then.getTime() - now.getTime());
+          setTimeout(function() {
+             window.location.reload(true);
+           }, timeout);
+      }
+
+    $(document).ready(function() {
+      refreshAt(9,25,10);
+      refreshAt(9,25,20);
+      refreshAt(9,25,30);
+    });
+    </script>
+    test
+  </body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Patua One', cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Patua One', cursive;
+}
+
+.welcome-page {
+
+}
+
+
+.welcome-flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-content {
+  width: 70%;
+  border: 10px solid white;
+  padding: 60px;
+  z-index: 9999;
+}
+
+.welcome-message {
+  width: 100%;
+  line-height: 80px;
+  font-size: 120px;
+  color: white;
+  z-index: 9999;
+}
+
+.welcome-datetime {
+  width: 100%;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
+  z-index: 9999;
+}
+
+.welcome-hr {
+  border: none;
+  border-right: 10px solid white;
+  height: 100%;
+  z-index: 9999;
+}
+
+.scan-page {
+  display: none;
+}
+
+.custom-h2 {
+  font-size: 4.3em;
+  margin: 0 auto;
+  word-wrap: break-word
+}
+
+.custom-h3 {
+  font-size: 3em;
+  margin-top: 0;
+  color: white
+}
+
+.custom-h4 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-family: 'Domine', serif;
+  font-weight: bold;
+}
+
+div.datetime {
+  width: 100%;
+  font-size: 3.5em;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+  top: 60px;
+}
+
+span.span-time {
+  line-height: 60px;
+}
+
+span.span-date {
+  line-height: 60px;
+}
+
+/*
+div.date-md {
+  position: relative;
+  top: 40px;
+} */
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 4px dotted black;
+  margin: 20px auto 30px auto;
+}
+
+div.cardcontent-left {
+  padding: 15px 0px;
+  border-radius: 8px 0 0 8px;
+  background-color: #27ae60;
+}
+
+div.cardcontent-right {
+  padding: 10px 40px;
+}
+
+div.time-table {
+  padding: 35px;
+}
+
+div.content {
+  overflow: hidden;
+  padding-top: 7vh !important;
+}
+
+div.card-content div.img-content img {
+  width: 472px;
+  height: 708px;
+}
+
+div.mealcount {
+  border: solid 12px black;
+  border-radius: 20px;
+  width: 65%;
+  height: 310px;
+}
+
+div.mealcount-img i.material-icons {
+  font-size: 22em;
+  position: relative;
+  top: -10px;
+  left: 20px;
+  /* color: #3fb0ac; */
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+input#barcode-scan {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  border: none;
+  color: transparent;
+  text-shadow: 0 0 0 #2196f3;
+  opacity: 0;
+}
+
+div.mealcount-text span {
+  font-size: 7.5em;
+  position: relative;
+  top: 130px;
+}
+
+div.meal-message {
+  font-size: 2em;
+  margin-left: 15px;
+}
+
+select#voices {
+  display: none;
+}
+
+img.student-img {
+  width:200px;  
+}

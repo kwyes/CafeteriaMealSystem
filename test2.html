@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<button type="button">Beep!</button>    <span>testasdf</span>
+    <script type="text/javascript">
+    function beep() {
+      var snd = new  Audio("sound/beep.wav");
+      snd.play();
+    }
+
+
+document.getElementsByTagName("button")[0].addEventListener("click",    beep);
+    </script>
+  </body>
+</html>
